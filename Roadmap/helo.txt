@@ -1,0 +1,119 @@
+String: A string mtlb sequence of characters in java. Java meh objects joh hote hai string ke voh immutable hote hai mtlb agar unko ek baar create kr diya toh unmei hum koi change nahi kr skte.
+
+two ways for creating string 
+String s2 = new String("Hello"); //New keyword
+String s1 = world; //string literal
+
+
+String(byte[] byte_arr):Ek new string ban deta hai by decoding the byte array. Decording ke liye use krta hai platform default character.
+
+Sring(byte[] byte_arr, charset char-set): char_set use krta hai decoding ke liye
+
+String(byte[] byte_arr start_index, int length): new string bana deta hai byte array se depend krta hai starting index and length number of characters from starting location
+
+
+String(String buffer s_buffer) ek new string allocate kr deta hai old string se in s_buffer
+
+
+
+String buffer class: represent krta hai mutable sewuence of char that can be modified, mtlb ek baar object ban gya string buffer to humm uska content change kr skte hai without creating the new object.
+
+Features:
+1. string buffer ka content change kr skte hai without creating the new object.
+2. StringBuffre ki khud ki initial capacity hoti hai par ye baad mei change ho skit hai using ensureCapacity() method.
+3. append() ki help se hum char, string or object add kr skte hai in SB at the end.
+4. insert ki help se hum ek specified position pe char, string, or objects insert kr skte hai.
+5. delte() method ke help se hum remove kr skte hai.
+6. reverse() ki help se order of characters reverse kr skte hai.
+
+Advantages: 
+1. Mutable
+2. Efficient
+
+String and Strings BUffres dono hi thread safe hote hai but in different ways. String buffer synchronized hota haai mtlb ki yeh thread safe hai but iski vajah se performace issues bhi aa skte haiagar multiple threads access ho rahe hai ek time pe.
+string bhi thread safe hote hai properly bcuz state change nahi hoti ek baar create hone ke baad.
+
+
+Constructor:
+
+StringBuffer(): 16 characters ke liye room reserve kr deta hai without allocation. StringBuffer s = new StringBuffre()
+
+StringBuffer(int size): integer argument accept k leta hai explicitly that sets the size of the buffer.
+StringBuffer(20);
+
+StringBuffer(string): string argument ko accept krta hai joh ki set kr deti hai initial contents of the string buffer object and reserves room for 16 more characters without realocation.
+
+
+Facts:
+1. Java.lang.StringBuffer joh hota hai voh object class ko extend kr deta hai
+2. Jitni bhi impleented interafces hoti hai voh serializable, appendable and char sequence
+3. String buffers joh hote hai voh safe hote hai for use by multiple threads. The methods can be synchronized 
+
+Wrappere class in java:
+
+Jinke objects mei primitive data types hote hai.
+jab bhi hum ek wrapper class bnate hai toh usme ek field hoti hai jisme hum primitive data type store krva sktey hai.
+
+Need:
+Primitive data types ko object mei convert kr deta hai. Object stabh chahiye hote hai jab hume modify krna ho arguments ko into a method primitive types are passed by value.
+joh java.util class hoti hai voh sirf objects ko handle krti hai and hence wrapper class ki iss case meh zaroorat padti hai.
+Collection framework mei joh data striuctires hote hai voh referencde type ke objects store krte hai na ki primitivw type ke
+multithreading concept ke according ek object ka synchronization support krna bhot zaroori hai.
+
+Autoboxing: automatic conversion of primitve types to the objects of their corresponding wrapper classes ika autoboxing. 
+
+
+Superkeywords:
+refrence variable hota hai used to refer parent class when we are working with objects. 
+Concept of inheritance
+Faetures: 
+calling the parent class constructor
+acessing parent class method
+Accessing parents class field
+first statement in a constructor
+cannot be used in static context
+not always required
+
+Advantages:
+subclasses inherit kar skti hai functinality of their parents class
+subclasses methods ko override kr skit hai and access kar skti hai fields and methods ko of thei rparent class with the help of super keyoword
+code becomes more flexible
+we can acheive abstraction and excapsulation
+paret take car of their general functionality 
+
+
+FINAL CLASS:
+non access modifier 
+restrict user for using thta part of code
+1. Final variables: 
+2. Final method: cannot be overriden
+3. Finaal class: 
+4. Initializatin: final variable ya to constructor meh initialise hote hai ya ya declaration time 
+5. performance: 
+6. Security: 
+agar ek final variable refrence hai iska mtlb ki variable cannot be re-bound to refrence anotherobject 
+but joh internal state hogi refrence vaicable jis object ki taraf point krra hoga can be changed 
+finall array me se elemnets remove kr skte hai
+
+blank vale ko ya toh consturtcot meh krdo ya static block meh krdo
+
+
+PACKAGES:
+Organize related classes and interfcaes into a single unit.
+declared using package keywords
+group classes and interfaces based on functionality
+packages ke pass access modifiers hote hai to control visibility
+doesnot support multiple inheritance
+
+Interfaces:
+define a contract for classes to implemnt 
+interface keyword
+define method method signatures that classes implementing the interface must provide implementation
+methods are implicitly public and abstract
+support multiple inheitanece as a class can implement multiple interfaces
+
+
+
+
+
+

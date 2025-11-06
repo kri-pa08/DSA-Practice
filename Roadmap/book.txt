@@ -1,0 +1,240 @@
+PHASE 1: BASICS OF PROGRAMMING (if you're a complete beginner)
+✅ If you already know how to code (loops, functions, etc.), skip to Phase 2.
+
+Variables and Data Types
+
+Operators (Arithmetic, Logical, Bitwise)
+
+Input/Output
+
+Conditional Statements (if-else, switch)
+
+Loops (for, while, do-while)
+
+Functions (Recursion Basics here)
+
+Arrays (1D and 2D)
+
+String Basics
+
+🚀 PHASE 2: TIME & SPACE COMPLEXITY
+What is Time Complexity?
+
+What is Space Complexity?
+
+Big O, Big Ω, Big Θ
+
+Best, Worst, Average Cases
+
+How to Calculate Time Complexity
+
+Common Time Complexities (O(1), O(n), O(log n), etc.)
+
+🧠 PHASE 3: BASIC DATA STRUCTURES
+🔹 Arrays
+Traversal, Insertion, Deletion
+
+Searching (Linear, Binary Search)
+
+Sorting Algorithms (Bubble, Selection, Insertion, Merge, Quick)
+
+Two Pointers Technique
+
+Prefix Sum Technique
+
+Sliding Window Technique
+
+🔹 Strings
+String Manipulation
+
+Palindromes, Anagrams
+
+Pattern Matching (Naive, KMP, Rabin-Karp)
+
+String Builder / Mutable Strings
+
+Substrings and Subsequence
+
+🔹 Linked List
+Singly Linked List (Insert, Delete, Reverse)
+
+Doubly Linked List
+
+Circular Linked List
+
+Floyd’s Cycle Detection
+
+Merge Two Sorted Lists
+
+Intersection Point of Two Lists
+
+Detect and Remove Loop
+
+🧩 PHASE 4: MATHS FOR DSA
+Prime Numbers (Sieve of Eratosthenes)
+
+GCD, LCM (Euclidean Algorithm)
+
+Modular Arithmetic
+
+Bit Manipulation (AND, OR, XOR, Left/Right Shift)
+
+Counting Set Bits
+
+Power of Two, Power Calculation (Fast Exponentiation)
+
+📚 PHASE 5: STACKS & QUEUES
+🔹 Stack
+Implementation (Array/Linked List)
+
+Infix, Prefix, Postfix
+
+Balanced Parentheses
+
+Next Greater Element
+
+Stock Span Problem
+
+Min Stack
+
+🔹 Queue
+Implementation (Array/Linked List)
+
+Circular Queue
+
+Deque (Double-Ended Queue)
+
+Sliding Window Maximum
+
+LRU Cache (Using Deque + HashMap)
+
+🌳 PHASE 6: TREES
+Binary Trees (Traversals: Inorder, Preorder, Postorder)
+
+Binary Search Trees (BST)
+
+Height, Diameter
+
+Lowest Common Ancestor (LCA)
+
+Balanced Tree (AVL Concept)
+
+Tree to DLL
+
+Serialize & Deserialize Binary Tree
+
+Trie (Prefix Tree)
+
+Segment Tree (Lazy Propagation)
+
+🧭 PHASE 7: HEAP / PRIORITY QUEUE
+Binary Heap (Min & Max Heap)
+
+Heapify and Heap Sort
+
+Priority Queue in STL / Java / Python
+
+K Largest / K Smallest Elements
+
+Median of a Stream
+
+Merge K Sorted Arrays / Lists
+
+🔗 PHASE 8: HASHING / HASHMAP
+HashTable, HashSet
+
+Frequency Count
+
+Subarray with 0 Sum
+
+Count Distinct Elements
+
+Longest Consecutive Subsequence
+
+Group Anagrams
+
+LRU Cache using HashMap
+
+🔄 PHASE 9: RECURSION & BACKTRACKING
+Basics of Recursion
+
+Factorial, Fibonacci, Sum of Digits
+
+Permutations and Combinations
+
+N-Queens Problem
+
+Sudoku Solver
+
+Subset / Subsequence
+
+Rat in a Maze
+
+Word Search
+
+🕸️ PHASE 10: GRAPHS
+Graph Representation (Adjacency List & Matrix)
+
+BFS and DFS
+
+Detect Cycle in Graph (Undirected & Directed)
+
+Topological Sorting
+
+Dijkstra’s Algorithm
+
+Bellman-Ford
+
+Floyd-Warshall
+
+Minimum Spanning Tree (Prim’s and Kruskal’s)
+
+Disjoint Set Union (DSU)
+
+Bridges and Articulation Points
+
+Kosaraju’s Algorithm (Strongly Connected Components)
+
+💡 PHASE 11: DYNAMIC PROGRAMMING (DP)
+Recursion to Memoization
+
+Tabulation
+
+1D DP:
+
+Fibonacci
+
+Climbing Stairs
+
+Minimum Cost Climbing
+
+2D DP:
+
+0/1 Knapsack
+
+Subset Sum
+
+Equal Partition
+
+Longest Common Subsequence
+
+Longest Palindromic Substring
+
+Edit Distance
+
+DP on Trees
+
+DP on Graphs
+
+Bitmask DP
+
+🧪 PHASE 12: PRACTICE & APPLICATIONS
+Leetcode Patterns (Blind 75, Neetcode 150)
+
+InterviewBit Topics
+
+Codeforces / CodeChef Practice
+
+Mock Contests
+
+Build Projects that use DSA (like autocomplete, pathfinding visualizer)
