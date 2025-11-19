@@ -1,9 +1,9 @@
-class Solution {
+public class Solution {
+
     public boolean isPalindrome(String s) {
         int i = 0, j = s.length() - 1;
 
         while (i < j) {
-            
             while (i < j && !Character.isLetterOrDigit(s.charAt(i))) {
                 i++;
             }
@@ -11,7 +11,6 @@ class Solution {
                 j--;
             }
 
-            
             if (Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j))) {
                 return false;
             }
@@ -21,5 +20,10 @@ class Solution {
         }
         return true;
     }
-}
 
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        String input = "A man, a plan, a canal: Panama";
+        System.out.println(sol.isPalindrome(input)); 
+    }
+}
