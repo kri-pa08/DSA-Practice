@@ -1,4 +1,4 @@
-public class Solution {
+public class Palindrome {
 
     public boolean isPalindrome(String s) {
         int i = 0, j = s.length() - 1;
@@ -22,7 +22,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        Palindrome sol = new Palindrome();
         String input = "A man, a plan, a canal: Panama";
         System.out.println(sol.isPalindrome(input)); 
     }
