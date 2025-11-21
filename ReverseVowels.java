@@ -1,4 +1,5 @@
-public class Solution {
+public class ReverseVowels {
+
     public String reverseVowels(String s) {
         char[] arr = s.toCharArray();
         int left = 0;
@@ -28,7 +29,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        System.out.println(sol.reverseVowels("hello"));  // ➝ holle
+        ReverseVowels sol = new ReverseVowels();
+        System.out.println(sol.reverseVowels("hello")); // ➝ holle
+        System.out.println(sol.reverseVowels("leetcode")); // ➝ leotcede
     }
 }
