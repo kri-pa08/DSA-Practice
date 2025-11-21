@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class RomanToInteger {
     public int romanToInt(String s) {
         
         Map<Character, Integer> map = new HashMap<>();
@@ -17,7 +17,6 @@ class Solution {
         for (int i = 0; i < s.length(); i++) {
             int curr = map.get(s.charAt(i));
 
-          
             if (i + 1 < s.length() && curr < map.get(s.charAt(i + 1))) {
                 result -= curr;  
             } else {
@@ -26,5 +25,12 @@ class Solution {
         }
 
         return result;
+    }
+
+    public static void main(String[] args) {
+        RomanToInteger sol = new RomanToInteger();
+        System.out.println(sol.romanToInt("III"));     // ➝ 3
+        System.out.println(sol.romanToInt("LVIII"));   // ➝ 58
+        System.out.println(sol.romanToInt("MCMXCIV")); // ➝ 1994
     }
 }
