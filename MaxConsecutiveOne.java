@@ -24,12 +24,4 @@ public class MaxConsecutiveOne {
         return maxLen;
     }
 
-    public static void main(String[] args) {
-        MaxConsecutiveOne obj = new MaxConsecutiveOne();
-        
-        int[] nums = {1, 1, 1, 0, 0, 0, 1, 1, 1, 1};
-        int k = 2;
-
-        System.out.println(obj.longestOnes(nums, k)); // Output: 6
-    }
 }
