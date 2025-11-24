@@ -29,8 +29,8 @@ class RomanToInteger {
 
     public static void main(String[] args) {
         RomanToInteger sol = new RomanToInteger();
-        System.out.println(sol.romanToInt("III"));     // ➝ 3
-        System.out.println(sol.romanToInt("LVIII"));   // ➝ 58
-        System.out.println(sol.romanToInt("MCMXCIV")); // ➝ 1994
+        System.out.println(sol.romanToInt("III"));     
+        System.out.println(sol.romanToInt("LVIII"));   
+        System.out.println(sol.romanToInt("MCMXCIV")); 
     }
 }
