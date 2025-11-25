@@ -12,12 +12,12 @@ public class MaxConsecutive {
                 count = 0;
             }
         }
-        
+
         return maxCount;
     }
 
     public static void main(String[] args) {
-        MaxConsecutiveOnes obj = new MaxConsecutiveOnes();
+        MaxConsecutive obj = new MaxConsecutive(); // FIXED
         int[] nums = {1, 1, 0, 1, 1, 1};
         System.out.println(obj.findMaxConsecutiveOnes(nums)); // Output: 3
     }
