@@ -14,7 +14,6 @@ class FindMinimumInRotatedSortedArray {
         }
         return nums[low];
     }
-
   
     public static void main(String[] args) {
         FindMinimumInRotatedSortedArray sol = new FindMinimumInRotatedSortedArray();
