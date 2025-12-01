@@ -1,4 +1,3 @@
-//Zig Zag Conversion Leetcode
 public class ZigzagConversion {
     public String convert(String s, int numRows) {
         if (numRows == 1 || numRows >= s.length()) return s;
@@ -6,10 +5,13 @@ public class ZigzagConversion {
         StringBuilder[] rows = new StringBuilder[numRows];
         for (int i = 0; i < numRows; i++) rows[i] = new StringBuilder();
         
-        int curRow = 0, step = 1;
+        int curRow = 0;
+        int step = 1;
+
         for (char c : s.toCharArray()) {
             rows[curRow].append(c);
-            if (curRow == 0 || curRow == numRows - 1) step = -step;
+            if (curRow == 0) step = 1;
+            else if (curRow == numRows - 1) step = -1;
             curRow += step;
         }
         
@@ -17,11 +19,11 @@ public class ZigzagConversion {
         for (StringBuilder row : rows) result.append(row);
         return result.toString();
     }
-    
+
     public static void main(String[] args) {
         ZigzagConversion sol = new ZigzagConversion();
-        System.out.println(sol.convert("PAYPALISHIRING", 3)); 
-        System.out.println(sol.convert("PAYPALISHIRING", 4)); 
-        System.out.println(sol.convert("A", 1)); 
+        System.out.println(sol.convert("PAYPALISHIRING", 3)); // PAHNAPLSIIGYIR
+        System.out.println(sol.convert("PAYPALISHIRING", 4)); // PINALSIGYAHRPI
+        System.out.println(sol.convert("A", 1));             // A
     }
 }
