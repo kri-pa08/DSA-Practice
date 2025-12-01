@@ -1,4 +1,3 @@
-//Word Search String Problem
 class Solution {
     public boolean exist(char[][] board, String word) {
         int rows = board.length;
@@ -11,16 +10,16 @@ class Solution {
                 }
             }
         }
-        return false
+        return false;
     }
 
     private boolean dfs(char[][] board, int r, int c, String word, int index) {
-    
         if (index == word.length()) return true;
 
         if (r < 0 || c < 0 || r >= board.length || c >= board[0].length || board[r][c] != word.charAt(index)) {
             return false;
         }
+
         char temp = board[r][c];
         board[r][c] = '#';
 
@@ -30,7 +29,6 @@ class Solution {
                         dfs(board, r, c - 1, word, index + 1);
 
         board[r][c] = temp;
-
         return found;
     }
 }
