@@ -1,48 +1,35 @@
 
-public class ShortestPalindrome {
+class Solution {
+    public boolean exist(char[][] board, String word) {
+        int rows = board.length;
+        int cols = board[0].length;
 
-    // LeetCode-style method signature
-    public String shortestPalindrome(String s) {
-        if (s == null || s.length() <= 1) return s;
-
-        String rev = new StringBuilder(s).reverse().toString();
-        String combined = s + "#" + rev; 
-
-        int n = combined.length();
-        int[] lps = new int[n]; 
-
-      
-        for (int i = 1; i < n; i++) {
-            int len = lps[i - 1];
-            while (len > 0 && combined.charAt(i) != combined.charAt(len)) {
-                len = lps[len - 1];
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                if (dfs(board, r, c, word, 0)) {
+                    return true;
+                }
             }
-            if (combined.charAt(i) == combined.charAt(len)) {
-                len++;
-            }
-            lps[i] = len;
+        }
+        return false;
+    }
+
+    private boolean dfs(char[][] board, int r, int c, String word, int index) {
+        if (index == word.length()) return true;
+
+        if (r < 0 || c < 0 || r >= board.length || c >= board[0].length || board[r][c] != word.charAt(index)) {
+            return false;
         }
 
-        int longestPalPrefix = lps[n - 1]; 
-        String suffixToAdd = s.substring(longestPalPrefix);
-        String prefix = new StringBuilder(suffixToAdd).reverse().toString();
+        char temp = board[r][c];
+        board[r][c] = '#';
 
-        return prefix + s;
-    }
+        boolean found = dfs(board, r + 1, c, word, index + 1) ||
+                        dfs(board, r - 1, c, word, index + 1) ||
+                        dfs(board, r, c + 1, word, index + 1) ||
+                        dfs(board, r, c - 1, word, index + 1);
 
-   
-    public static void main(String[] args) {
-        ShortestPalindrome solver = new ShortestPalindrome();
-
-        String s1 = "aacecaaa";
-        String s2 = "abcd";
-        String s3 = "";
-        String s4 = "aaab";
-
-        System.out.println("Input: " + s1 + " -> " + solver.shortestPalindrome(s1)); // aaacecaaa
-        System.out.println("Input: " + s2 + " -> " + solver.shortestPalindrome(s2)); // dcbabcd
-        System.out.println("Input: \"" + s3 + "\" -> \"" + solver.shortestPalindrome(s3) + "\"");
-        System.out.println("Input: " + s4 + " -> " + solver.shortestPalindrome(s4));
+        board[r][c] = temp;
+        return found;
     }
 }
-
