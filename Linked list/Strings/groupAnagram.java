@@ -1,4 +1,7 @@
-class Solution {
+import java.util.*;
+
+public class GroupAnagrams {
+
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
 
@@ -11,5 +14,14 @@ class Solution {
         }
 
         return new ArrayList<>(map.values());
+    }
+
+    public static void main(String[] args) {
+        GroupAnagrams obj = new GroupAnagrams();
+
+        String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
+        List<List<String>> result = obj.groupAnagrams(strs);
+
+        System.out.println(result);
     }
 }
