@@ -1,4 +1,7 @@
-class Solution {
+import java.util.*;
+
+public class RestoreIpAddresses {
+
     public List<String> restoreIpAddresses(String s) {
         List<String> result = new ArrayList<>();
         backtrack(s, 0, new ArrayList<>(), result);
@@ -20,5 +23,13 @@ class Solution {
                 path.remove(path.size() - 1);
             }
         }
+    }
+
+    public static void main(String[] args) {
+        RestoreIpAddresses obj = new RestoreIpAddresses();
+
+        System.out.println(obj.restoreIpAddresses("25525511135")); // ["255.255.11.135", "255.255.111.35"]
+        System.out.println(obj.restoreIpAddresses("0000"));        // ["0.0.0.0"]
+        System.out.println(obj.restoreIpAddresses("101023"));      // ["1.0.10.23", "1.0.102.3", "10.1.0.23", "10.10.2.3", "101.0.2.3"]
     }
 }
