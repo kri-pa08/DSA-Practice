@@ -1,4 +1,7 @@
-class Solution {
+import java.util.*;
+
+public class WordSearch {
+
     public boolean exist(char[][] board, String word) {
         int rows = board.length;
         int cols = board[0].length;
@@ -30,5 +33,19 @@ class Solution {
 
         board[r][c] = temp;
         return found;
+    }
+
+    public static void main(String[] args) {
+        WordSearch obj = new WordSearch();
+
+        char[][] board = {
+            {'A','B','C','E'},
+            {'S','F','C','S'},
+            {'A','D','E','E'}
+        };
+
+        System.out.println(obj.exist(board, "ABCCED")); // true
+        System.out.println(obj.exist(board, "SEE"));    // true
+        System.out.println(obj.exist(board, "ABCB"));   // false
     }
 }
