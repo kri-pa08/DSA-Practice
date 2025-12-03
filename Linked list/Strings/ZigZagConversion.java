@@ -1,5 +1,5 @@
 public class ZigzagConversion {
-
+//ZigZag Conversiont
     public String convert(String s, int numRows) {
         if (numRows == 1 || numRows >= s.length()) return s;
 
