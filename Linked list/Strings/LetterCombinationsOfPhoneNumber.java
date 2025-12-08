@@ -1,4 +1,8 @@
-class Solution {
+import java.util.ArrayList;
+import java.util.List;
+
+public class LetterCombinationsOfPhoneNumber {
+
     private static final String[] KEYPAD = {
         "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"
     };
@@ -12,16 +16,24 @@ class Solution {
     }
 
     private void backtrack(int index, String current, String digits, List<String> result) {
-        // If we formed a complete combination
         if (index == digits.length()) {
             result.add(current);
             return;
         }
 
-        
         String letters = KEYPAD[digits.charAt(index) - '0'];
         for (char ch : letters.toCharArray()) {
             backtrack(index + 1, current + ch, digits, result);
         }
+    }
+
+    
+    public static void main(String[] args) {
+        LetterCombinationsOfPhoneNumber obj = new LetterCombinationsOfPhoneNumber();
+
+        String digits = "23";
+        List<String> result = obj.letterCombinations(digits);
+
+        System.out.println("Letter combinations: " + result);
     }
 }
