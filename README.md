@@ -1,1 +1,1 @@
-Daily DSA Practice Questions From Leetcode in JAVA
+Daily DSA Practice Questions From Leetcode
