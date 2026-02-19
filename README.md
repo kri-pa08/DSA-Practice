@@ -1,1 +1,1 @@
-Daily DSA Practice Questions From Leetcode
+DSA Practice Questions From Leetcode
