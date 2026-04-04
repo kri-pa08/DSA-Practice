@@ -1,1 +1,1 @@
-DSA Practice Questions
+Daily DSA Practice Questions
