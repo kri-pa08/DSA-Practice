@@ -1,3 +1,4 @@
+//delete middle java
 class Solution {
     public ListNode deleteMiddle(ListNode head) {
         if (head.next == null) return null;
