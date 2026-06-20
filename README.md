@@ -1,2 +1,2 @@
-dailyDSA Practice Questions
+daily DSA Practice Questions
 from leetcode 
