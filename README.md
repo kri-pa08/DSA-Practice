@@ -1,1 +1,1 @@
-Daily DSA Practi leetcode 
+Daily DSA Practice eetcode 
