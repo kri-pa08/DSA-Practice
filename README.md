@@ -1,1 +1,1 @@
-Daily DSA Practice Quesleetcode 
+Daily DSA Practice leetcode 
