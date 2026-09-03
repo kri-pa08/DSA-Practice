@@ -1,5 +1,5 @@
 //How to write a basic code for tree (node, left child, right child)
-class Introduction {
+class TreeNode {
     int data;
     TreeNode left;
     TreeNode right;
@@ -11,13 +11,13 @@ class Introduction {
     }
 }
 
-public class Main {
+public class Introduction {
     public static void main(String[] args) {
 
-        TreeNode root = new TreeNode(10);
+        TreeNode root = new TreeNode(5);
 
-        root.left = new TreeNode(5);
-        root.right = new TreeNode(20);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(10);
 
         System.out.println(root.data);
         System.out.println(root.left.data);
