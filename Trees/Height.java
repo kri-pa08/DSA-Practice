@@ -1,4 +1,4 @@
-//Height of a tree
+//Height of the tree
 import java.util.*;
 class TreeNode{
     int data;
@@ -40,3 +40,4 @@ class TreeNode{
             return 1+Math.max(leftHeight, rightHeight);
         }
     }
+//heigt of the tree
