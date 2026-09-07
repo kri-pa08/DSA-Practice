@@ -40,4 +40,4 @@ class TreeNode{
             return 1+Math.max(leftHeight, rightHeight);
         }
     }
-//height
+//height of the tree
