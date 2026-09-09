@@ -2,7 +2,7 @@
 
 A collection of my Data Structures and Algorithms practice in Java.
 
-This repository contains the problems I solve while improving my -solving skills, understanding core DSA concepts, and preparing for coding interviews and online assessments.
+This repository contains the problems I solve while improving my problem-solving skills, understanding core DSA concepts, and preparing for coding interviews and online assessments.
 
 ## About This Repository
 
