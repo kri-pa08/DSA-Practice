@@ -1,4 +1,4 @@
-# DSA Pr
+# DSA Practice 
 
 A collection of my Data Structures and Algorithms practice in Java.
 
