@@ -1,5 +1,5 @@
 class Heapify{
-    
+    //Root should be greater than their child
     int arr[];
     int size;
 
