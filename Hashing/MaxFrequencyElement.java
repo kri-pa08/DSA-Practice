@@ -18,4 +18,4 @@ public class MaxFrequencyElement{
     }
 }
 }
-} //there is an error in this code
+} //there is an error in this code can you identify it?
