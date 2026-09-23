@@ -6,7 +6,7 @@ public class MoveZeroes {
 
         int j = 0;
 
-        // Non-zero elements ko front mein lana
+        // Bring non zeroes in front;;
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i] != 0) {
@@ -14,8 +14,7 @@ public class MoveZeroes {
                 j++;
             }
         }
-
-        // Remaining positions mein 0 bharna
+        //fil spaces with 0;
         while (j < arr.length) {
             arr[j] = 0;
             j++;
