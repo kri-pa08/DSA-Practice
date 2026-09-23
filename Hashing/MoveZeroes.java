@@ -14,7 +14,7 @@ public class MoveZeroes {
                 j++;
             }
         }
-        //fil spaces with 0;
+        //fill spaces with 0;
         while (j < arr.length) {
             arr[j] = 0;
             j++;
