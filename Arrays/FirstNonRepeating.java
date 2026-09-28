@@ -24,7 +24,7 @@ public class FirstNonRepeating {
             if (freq.get(num) == 1) {
                 System.out.println(num);
                 break;
-            }
+            } //breaks
         }
     }
 } 
