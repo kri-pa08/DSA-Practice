@@ -6,7 +6,7 @@ public class FirstNonRepeating {
 
         int[] arr = {2, 5, 1, 5, 7, 2, 9};
 
-        HashMap<Integer, Integer> freq = new HashMap<>();
+        HashMap<Integer> freq = new HashMap<>();
 
         // Step 1: Frequency count
         for (int num : arr) {
