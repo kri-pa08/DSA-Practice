@@ -27,4 +27,4 @@ public class SecondLargest{
     }
     System.out.println("Second Largest = " + second);
 }
-}//Second Largest
+}
