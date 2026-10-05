@@ -28,4 +28,3 @@ public class LongestCommonPrefix {
         System.out.println(sol.longestCommonPrefix(arr2)); // ""
     }
 }
-//longest common pref
