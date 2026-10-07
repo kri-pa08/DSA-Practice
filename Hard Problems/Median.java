@@ -10,7 +10,7 @@ class Solution {
         }
 
         for (int i = 0; i < m; i++) {
-            merd[n + i] = nums2[i];
+            merged[n + i] = nums2[i];
         }
 
         Arrays.sort(merged);
