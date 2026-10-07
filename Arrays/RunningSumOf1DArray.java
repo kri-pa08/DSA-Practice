@@ -16,6 +16,6 @@ class Solution {
         Solution sol = new Solution();
 
         int[] nums = {1, 2, 3, 4};
-        System.out.println(Arrays.toString(sol.runningSum(nums))); // [1, 3, 6, 10]
+        System.out.println(toString(sol.runningSum(nums))); // [1, 3, 6, 10]
     }
 }
