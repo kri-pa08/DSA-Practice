@@ -1,4 +1,4 @@
-//Move zeroes to end without breakign the order of non zeroes
+//Move zeroes to end without breaking the order of non zeroes
 
 public class MoveZeroes {
 
